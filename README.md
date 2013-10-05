@@ -13,6 +13,12 @@ Refactor 912492d7adb5c4368c1496af87a632f694f30b62
 
 Mapping view and data
 
-- Using key-value pairs (ViewModel)
-- Using Backbone (fully application framework), or
+- Using key-value pairs (ViewModel): use JSON to present key-value data
+- Using Backbone (fully application framework) for applying ViewModel, or
 - Simple template library (eg. [jquery template](https://github.com/BorisMoore/jquery-tmpl)
+
+## Stage 3
+
+UI made easy
+
+- Use Bootstrap CSS framework
