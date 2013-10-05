@@ -17,3 +17,10 @@ Mapping view and data
 - Using Backbone (fully application framework) for applying ViewModel, or
 - Simple template library (eg. [jquery template](https://github.com/BorisMoore/jquery-tmpl))
 - UI made easy: use Bootstrap CSS framework
+
+## Stage 3
+
+Application
+
+- Use Bootstrap navbars
+- Responsive design by Bootstrap
