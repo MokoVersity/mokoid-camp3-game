@@ -29,6 +29,6 @@ Application
 
 Connect Open API
 
-- Use AJAX: the jQuery way
-- Backbone way is better
+- Use WebSocket send
+- Not use AJAX method: if so, either jQuery way or Backbone way is good
 - Not RESTful yet: use CGI query string
