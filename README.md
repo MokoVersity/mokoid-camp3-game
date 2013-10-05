@@ -15,10 +15,5 @@ Mapping view and data
 
 - Using key-value pairs (ViewModel): use JSON to present key-value data
 - Using Backbone (fully application framework) for applying ViewModel, or
-- Simple template library (eg. [jquery template](https://github.com/BorisMoore/jquery-tmpl)
-
-## Stage 3
-
-UI made easy
-
-- Use Bootstrap CSS framework
+- Simple template library (eg. [jquery template](https://github.com/BorisMoore/jquery-tmpl))
+- UI made easy: use Bootstrap CSS framework
