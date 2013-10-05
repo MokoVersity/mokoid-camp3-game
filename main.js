@@ -9,10 +9,13 @@ var bubble = (function() {
 	function drawBall() {
 		var canvas = document.getElementById('board');
 
+		var background = Sizzle('#game-screen')[0],
+			rect = background.getBoundingClientRect();
+
 		var ctx = canvas.getContext('2d');
 
-		canvas.width = 480;
-		canvas.height = 640;
+		canvas.width = rect.width;
+		canvas.height = rect.height;
 
 		ballX = Math.floor(Math.random() * 300);
 		ballY = Math.floor(Math.random() * 500);
