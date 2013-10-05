@@ -27,8 +27,9 @@ Application
 
 ## Stage 4
 
-Connect Open API
+Send data
 
-- Use WebSocket send
+- Use WebSocket send()
+- Connect Open API: AJAX and RESTful
 - Not use AJAX method: if so, either jQuery way or Backbone way is good
-- Not RESTful yet: use CGI query string
+- Not use RESTful API: refactor URL query string to REST spec
