@@ -3,8 +3,13 @@ var bubble = (function(document, $) {
 		ballY,
 		radi;
 
+	var canvasWidth,
+		canvasHeight;
+
 	var timeoutVar,
 		counter;
+
+	var scores;
 
 	function drawBall() {
 		var canvas = document.getElementById('board');
@@ -16,6 +21,9 @@ var bubble = (function(document, $) {
 
 		canvas.width = rect.width;
 		canvas.height = rect.height;
+
+		canvasWidth = rect.width;
+		canvasHeight = rect.height;
 
 		ballX = Math.floor(Math.random() * 300);
 		ballY = Math.floor(Math.random() * 500);
@@ -51,13 +59,16 @@ var bubble = (function(document, $) {
 		// 是否擊中
 		if ((evt.clientX > x1) && (evt.clientX < x2)) {
 			if ((evt.clientY > y1) && (evt.clientY < y2)) {
-				console.log("Hit !");
+				scores = scores + (canvasWidth - radi);
+
+				console.log("Hit. Scores: " + scores);
 			}
 		}			
 	}
 
 	function start() {
 		counter = 1;
+		scores = 0;
 
 		document.getElementById("game-screen").
 					addEventListener("click", touchEvent, false);

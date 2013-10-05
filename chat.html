@@ -1,0 +1,20 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script src="modernizr.js" type="text/javascript"></script>	
+</head>
+<body>
+	
+</body>
+<script>
+if (Modernizr.websockets) {
+	var ws = new WebSocket('ws://static.moko365.com:8080', 'echo-protocol');
+
+	ws.onopen = function(evt) {
+		alert("open");
+	}
+}
+</script>
+</html>
