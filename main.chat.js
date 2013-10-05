@@ -16,6 +16,18 @@ var chat = (function($) {
 
 			$('#priceTemplate').tmpl(keyPairs).appendTo('#priceList');
 		}
+
+		$('#message').click(function() {
+            var content = $("#content").val();
+
+            console.log("Content: " + content);
+
+            var obj = {
+            	content: content
+            };
+
+            ws.send(JSON.stringify(obj));
+		});
 	}
 
 	return {
