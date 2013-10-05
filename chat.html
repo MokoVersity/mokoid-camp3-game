@@ -30,10 +30,20 @@
 
 </body>
 	<div>
+		<form id="submit_form" method="GET" action="">
+		    <div class="input-group">
+		      <span class="input-group-btn">
+		        <button class="btn btn-default" type="button">Go!</button>
+		      </span>
+		      <input type="text" class="form-control" placeholder="Message">
+		    </div>
+		</form>
+	</div>
+	<div>
 		<table class="table" id="priceList">
 			<tr>
-				<th>買進</th>
-				<th>賣出</th>
+				<th>Username</th>
+				<th>Message</th>
 				<th>時間</th>
 			</tr>
 		</table>
@@ -41,8 +51,8 @@
 
 <script id="priceTemplate" type="text/x-jquery-tmpl"> 
 		<tr>
-			<td>${bid}</td>
-			<td>${ask}</td>
+			<td></td>
+			<td>${message}</td>
 			<td>${timestamp}</td>
 		</tr>
 </script>
