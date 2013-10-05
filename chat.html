@@ -4,16 +4,25 @@
 	<meta charset="UTF-8">
 	<title>Document</title>
 	<script src="modernizr.js" type="text/javascript"></script>	
+	<script src="loader.chat.js" type="text/javascript"></script>		
 </head>
 <body>
 	
 </body>
+	<div id="price"></div>
 <script>
 if (Modernizr.websockets) {
 	var ws = new WebSocket('ws://static.moko365.com:8080', 'echo-protocol');
 
 	ws.onopen = function(evt) {
 		alert("open");
+	}
+
+	ws.onmessage = function(evt) {
+		var obj = JSON.parse(evt.data),
+			bid = obj.data.bid;
+
+		$('#price').append(bid);
 	}
 }
 </script>

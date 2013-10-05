@@ -4,11 +4,9 @@ window.addEventListener("load", function() {
         {
             load : [
                 "sizzle.js",
-                "jquery.min.js",
-                "main.js"
+                "jquery.min.js"
             ],
             complete : function() {
-                bubble.start();
             }
         }
     ]);
