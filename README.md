@@ -24,3 +24,11 @@ Application
 
 - Use Bootstrap navbars
 - Responsive design by Bootstrap
+
+## Stage 4
+
+Connect Open API
+
+- Use AJAX: the jQuery way
+- Backbone way is better
+- Not RESTful yet: use CGI query string
