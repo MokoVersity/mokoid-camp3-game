@@ -1,4 +1,4 @@
-var bubble = (function() {
+var bubble = (function(document, $) {
 	var ballX,
 		ballY,
 		radi;
@@ -9,7 +9,7 @@ var bubble = (function() {
 	function drawBall() {
 		var canvas = document.getElementById('board');
 
-		var background = Sizzle('#game-screen')[0],
+		var background = $('#game-screen')[0],
 			rect = background.getBoundingClientRect();
 
 		var ctx = canvas.getContext('2d');
@@ -34,8 +34,33 @@ var bubble = (function() {
 		}
 	}
 
+	function touchEvent(evt) {
+		console.log('clicked: ' + evt.clientX + " , " + evt.clientY);
+
+        var x1, 
+            x2,
+            y1,
+            y2;
+
+        // 四個角
+		x1 = ballX - radi;
+		x2 = ballX + radi;		
+		y1 = ballY - radi;
+		y2 = ballY + radi;	
+
+		// 是否擊中
+		if ((evt.clientX > x1) && (evt.clientX < x2)) {
+			if ((evt.clientY > y1) && (evt.clientY < y2)) {
+				console.log("Hit !");
+			}
+		}			
+	}
+
 	function start() {
 		counter = 1;
+
+		document.getElementById("game-screen").
+					addEventListener("click", touchEvent, false);
 
 		timeoutVar = setTimeout(drawBall, 1000);
 	}
@@ -44,4 +69,4 @@ var bubble = (function() {
 		start: start
 	}
 
-}) ();
+}) (document, Sizzle);

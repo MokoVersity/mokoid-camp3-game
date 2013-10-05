@@ -3,8 +3,8 @@ window.addEventListener("load", function() {
     Modernizr.load([
         {
             load : [
-                "main.js",
-                "sizzle.js"
+                "sizzle.js",
+                "main.js"
             ],
             complete : function() {
                 bubble.start();
