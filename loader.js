@@ -5,6 +5,7 @@ window.addEventListener("load", function() {
             load : [
                 "sizzle.js",
                 "jquery.min.js",
+                "bootstrap.min.js",
                 "main.js"
             ],
             complete : function() {
