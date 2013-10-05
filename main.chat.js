@@ -5,15 +5,16 @@ var chat = (function($) {
 		ws = new WebSocket('ws://static.moko365.com:8080', 'echo-protocol');
 
 		ws.onopen = function(evt) {
-			alert("open");
+			console.log('websocket opened');
 		}
 
 		ws.onmessage = function(evt) {
-			var obj = JSON.parse(evt.data),
-				bid = obj.data.bid,
-				timestamp = obj.data.timestamp;
+			console.log(evt.data);
 
-			$('#price').html('<p>' + bid + ', ' + timestamp + '</p>');
+			var obj = JSON.parse(evt.data),
+				keyPairs = obj.data;
+
+			$('#priceTemplate').tmpl(keyPairs).appendTo('#priceList');
 		}
 	}
 

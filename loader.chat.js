@@ -4,10 +4,9 @@ window.addEventListener("load", function() {
         {
             load : [
                 "sizzle.js",
-                "jquery.min.js"
-            ],
-            complete : function() {
-            }
+                "jquery.min.js",
+                "jquery.tmpl.min.js"
+            ]
         },
         {
             test : Modernizr.websockets,
