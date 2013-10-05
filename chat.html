@@ -10,20 +10,4 @@
 	
 </body>
 	<div id="price"></div>
-<script>
-if (Modernizr.websockets) {
-	var ws = new WebSocket('ws://static.moko365.com:8080', 'echo-protocol');
-
-	ws.onopen = function(evt) {
-		alert("open");
-	}
-
-	ws.onmessage = function(evt) {
-		var obj = JSON.parse(evt.data),
-			bid = obj.data.bid;
-
-		$('#price').append(bid);
-	}
-}
-</script>
 </html>

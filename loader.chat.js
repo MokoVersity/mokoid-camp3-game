@@ -8,7 +8,15 @@ window.addEventListener("load", function() {
             ],
             complete : function() {
             }
-        }
+        },
+        {
+            test : Modernizr.websockets,
+            yep: ['main.chat.js'],
+            nope : ['main.chat-alert.js'],
+            complete : function() {
+                chat.init();
+            }
+        },        
     ]);
 
 }, false);
