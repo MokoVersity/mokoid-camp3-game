@@ -2,7 +2,7 @@ var chat = (function($) {
 	var ws;
 
 	function init() {
-		ws = new WebSocket('ws://static.moko365.com:8080', 'echo-protocol');
+		ws = new WebSocket('ws://127.0.0.1:8080', 'echo-protocol');
 
 		ws.onopen = function(evt) {
 			console.log('websocket opened');
