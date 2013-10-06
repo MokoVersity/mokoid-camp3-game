@@ -47,3 +47,12 @@ Going mobile
 Using PhoneGap APIs
 
 - Camera web app
+
+# Stage 7
+
+Enter Nodejs: Developing Web service
+
+- Create a Web server
+- Handling URL routing
+- Create WebSocket server
+- Handling requests
