@@ -40,7 +40,7 @@ Going mobile
 
 - Use PhoneGap: build.phonegap.com or Eclipse+PhoneGap
 - Use viewport
-- Take care of Bootstrap responsive design
+- Use Mixins (LESS) to set media query of 'screen' height
 
 # Stage 6
 
