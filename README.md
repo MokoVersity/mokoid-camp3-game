@@ -33,3 +33,16 @@ Send data
 - Connect Open API: AJAX and RESTful
 - Not use AJAX method: if so, either jQuery way or Backbone way is good
 - Not use RESTful API: refactor URL query string to REST spec
+
+# Stage 5
+
+Goging mobile
+
+- Use PhoneGap: build.phonegap.com or Eclipse+PhoneGap
+- Use viewport
+
+# Stage 6
+
+Using PhoneGap APIs
+
+- Camera web app
