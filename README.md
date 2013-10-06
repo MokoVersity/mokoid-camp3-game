@@ -34,7 +34,7 @@ Send data
 - Not use AJAX method: if so, either jQuery way or Backbone way is good
 - Not use RESTful API: refactor URL query string to REST spec
 
-# Stage 5
+## Stage 5
 
 Going mobile
 
@@ -42,13 +42,13 @@ Going mobile
 - Use viewport
 - Use Mixins (LESS) to set media query of 'screen' height
 
-# Stage 6
+## Stage 6
 
 Using PhoneGap APIs
 
 - Camera web app
 
-# Stage 7
+## Stage 7
 
 Enter Nodejs: Developing Web service
 
@@ -56,3 +56,10 @@ Enter Nodejs: Developing Web service
 - Handling URL routing
 - Create WebSocket server
 - Handling requests
+
+## Stage 8
+
+Using package.json
+
+- for releasing software
+
