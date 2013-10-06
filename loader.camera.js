@@ -6,8 +6,7 @@ window.addEventListener("load", function() {
                 "sizzle.js",
                 "jquery.min.js",
                 "jquery.tmpl.min.js",
-                "bootstrap.min.js",
-                "cordova.js",
+                "bootstrap.min.js"
             ]
         },
         {
@@ -15,7 +14,6 @@ window.addEventListener("load", function() {
             yep: ['main.chat.js'],
             nope : ['main.chat-alert.js'],
             complete : function() {
-                chat.init();
             }
         },        
     ]);
