@@ -31,10 +31,45 @@ var wsServer = new WebSocketServer({
 	autoAcceptConnection: false
 });
 
+var onWsConnMessage = function(message) {
+	if (message.type === 'utf8') {
+
+		// Output: {"content":"a"}
+		console.log('Peer message: ' + message.utf8Data);
+
+		var data = JSON.parse(message.utf8Data);
+
+		// Real-time data push
+		var obj = {
+			type: 'message',
+			data: {
+				message: data.content,
+				username: 'jollen', 
+				timestamp: (new Date()).getTime()
+			}
+		};
+
+		// Real-time push message
+		for (i = 0; i < clients.length; i++) {
+			clients[i].sendUTF(JSON.stringify(obj));
+		}		
+	} else {
+		console.log('Unable to handle peer message');
+	}
+};
+
+var onWsConnClose = function(reasonCode, description) {
+	console.log('Peer disconnected with reason: ' + reasonCode);
+};
+
 var onWsRequest = function(request) {
 	console.log('WebSocket connect requested');
 
 	var connection = request.accept('echo-protocol', request.origin);
+
+	connection.on('message', onWsConnMessage);
+	connection.on('close', onWsConnClose);
+
 	clients.push(connection);
 };
 
