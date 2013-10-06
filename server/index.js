@@ -1,17 +1,10 @@
 var http = require('http');
 var url = require('url');
-
-var start = function() {
-	console.log('start is called');
-};
-
-var chat = function() {
-	console.log('chat is called');
-};
+var router = require('./requestHandlers');
 
 var handlers = {
-	"/": start,
-	"/chat": chat
+	"/": router.start,
+	"/chat": router.chat
 };
 
 var httpServer = http.createServer(function (req, res) {
