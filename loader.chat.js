@@ -6,8 +6,7 @@ window.addEventListener("load", function() {
                 "sizzle.js",
                 "jquery.min.js",
                 "jquery.tmpl.min.js",
-                "bootstrap.min.js",
-                "cordova.js",
+                "bootstrap.min.js"
             ]
         },
         {
