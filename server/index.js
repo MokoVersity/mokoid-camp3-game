@@ -15,7 +15,7 @@ var httpServer = http.createServer(function (req, res) {
 	console.log('pathname: ' + pathname + ", query: " + querystring);
 
 	if (typeof handlers[pathname] === 'function') {
-		return handlers[pathname]();
+		return handlers[pathname](req, res, querystring);
 	} else {
 		console.log('API not defined');
 	}
