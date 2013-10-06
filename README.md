@@ -36,10 +36,11 @@ Send data
 
 # Stage 5
 
-Goging mobile
+Going mobile
 
 - Use PhoneGap: build.phonegap.com or Eclipse+PhoneGap
 - Use viewport
+- Take care of Bootstrap responsive design
 
 # Stage 6
 
