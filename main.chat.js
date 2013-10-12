@@ -32,8 +32,12 @@ var chat = (function($) {
             */
 
              $.ajax({
-                url: "http://127.0.0.1:8080/chat?" + "m=" + content,
-                type: "GET"
+                url: "http://127.0.0.1:8080/chat",
+                type: "GET",
+                dataType: "json",
+                data: {
+				    content: content
+                }              
             });           
 		});
 	}

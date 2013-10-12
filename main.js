@@ -63,7 +63,10 @@ var bubble = (function(document, $) {
 
 				console.log("Hit. Scores: " + scores);
 			}
-		}			
+		}
+
+		// prevent default
+		evt.preventDefault();			
 	}
 
 	function start() {
