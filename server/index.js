@@ -75,5 +75,4 @@ var onWsRequest = function(request) {
 
 wsServer.on('request', onWsRequest);
 
-
 console.log('Server is running.');

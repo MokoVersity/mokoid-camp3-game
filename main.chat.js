@@ -18,15 +18,23 @@ var chat = (function($) {
 		}
 
 		$('#message').click(function() {
+			
             var content = $("#content").val();
 
             console.log("Content: " + content);
 
+            /*
             var obj = {
             	content: content
             };
 
             ws.send(JSON.stringify(obj));
+            */
+
+             $.ajax({
+                url: "http://127.0.0.1:8080/chat?" + "m=" + content,
+                type: "GET"
+            });           
 		});
 	}
 
