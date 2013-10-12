@@ -63,3 +63,9 @@ Using package.json
 
 - for releasing software
 
+## Final Stage
+
+- Use jQuery AJAX and JSON data instead of query string
+- use preventDefault()
+- use jQuery UI Touch Punch ('touchmove' event)
+- Try Express.js and understanding RESTful
