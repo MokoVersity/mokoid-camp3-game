@@ -28,7 +28,7 @@
 
 ### Install Package Control on Sublime Text 3 (Ctrl + `)
 ```
-import urllib.request,os; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); open(os.path.join(ipp, pf), 'wb').write(urllib.request.urlopen( 'http://sublime.wbond.net/' + pf.replace(' ','%20')).read())
+import urllib.request,os; pf = 'Package Control.sublime-package';ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); open(os.path.join(ipp, pf), 'wb').write(urllib.request.urlopen( 'http://sublime.wbond.net/' + pf.replace(' ','%20')).read())
 ```
 
 ### Install editorconfig
@@ -58,20 +58,27 @@ Ctrl + Shift + P
 type 'Install Package'
 type 'Emmet'
 ```
+
 ### Emmet Note (輸入後按tab)
 ```
 html:5
 .class
 #id
 ```
+
 ### Install NodeJS Web Server (ExpressJS)
+
 ```
 $ npm install -g express
 ```
 
 ### Install Bower (front-end package manager)
+
 ```
 $ npm install -g bower
+```
+
+### Install package by Bower
 ```
 bower init
 bower install bootstrap --save
