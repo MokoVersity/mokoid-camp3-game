@@ -1,5 +1,19 @@
-2013.10.05: HTML5 & JavaScript 應用與雲端服務整合開發
+# Startup Camp3 - HTML5 Game Development
 
+## List for development environment
+
+- [Sublime text](http://www.sublimetext.com/3)
+	- [Emmet](http://emmet.io)
+- [Github](https://github.com)
+- [NodeJS](http://nodejs.org/)
+	- [npm](https://npmjs.org/)
+	- [Express](http://expressjs.com)
+- [Bower](http://bower.io)
+	- [Bootstrap](http://getbootstrap.com)
+	- [jQuery](http://jquery.com)
+	-	[jQuery-tmpl](https://github.com/BorisMoore/jquery-tmpl)
+
+## Installation Note
 
 ## Stage 1
 
