@@ -6,7 +6,7 @@
 2. 套用Bootstrap 到index.html
 3. 使用 <canvas> 畫圓
 4. Consider JavaScript Closure
-5. 亂數產生圓
+5. 練習亂數
 6. 獨立出JavaScript 程式碼 (main.js)
 7. Use JavaScript Module Pattern
 8. 產生 10 個 Balls
