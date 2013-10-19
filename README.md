@@ -13,7 +13,21 @@
 	- [jQuery](http://jquery.com)
 	-	[jQuery-tmpl](https://github.com/BorisMoore/jquery-tmpl)
 
-## Installation Note
+## Note
+
+```
+npm install -g express
+npm install -g bower
+npm install
+```
+
+```
+bower init
+bower install bootstrap --save
+bower install query --save
+bower install jquery-tmpl --save
+bower install
+```
 
 ## Stage 1
 
