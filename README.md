@@ -5,6 +5,12 @@
 1. 使用Sublime Text + Emmet 自動產生標準index.html
 2. 套用Bootstrap 到index.html
 3. 使用 <canvas> 畫圓
+4. Consider JavaScript Closure
+5. 亂數產生圓
+6. 獨立出JavaScript 程式碼 (main.js)
+7. Use JavaScript Module Pattern
+8. 產生 10 個 Balls
+9. 加入背景圖
 
 
 ## List for development environment
