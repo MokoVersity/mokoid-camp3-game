@@ -4,7 +4,7 @@
 
 1. 使用Sublime Text + Emmet 自動產生標準index.html
 2. 套用Bootstrap 到index.html
-3. 
+3. 使用 <canvas> 畫圓
 
 
 ## List for development environment
