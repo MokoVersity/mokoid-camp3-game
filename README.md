@@ -3,6 +3,8 @@
 ## List for development environment
 
 - [Sublime text](http://www.sublimetext.com/3)
+	- [Package Control](https://sublime.wbond.net/)
+	- [EditorConfig](http://editorconfig.org/)
 	- [Emmet](http://emmet.io)
 - [Github](https://github.com)
 - [NodeJS](http://nodejs.org/)
@@ -15,12 +17,47 @@
 
 ## Note
 
+### Install Package Control on Sublime Text 3 (Ctrl + `)
 ```
-npm install -g express
-npm install -g bower
-npm install
+import urllib.request,os; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); open(os.path.join(ipp, pf), 'wb').write(urllib.request.urlopen( 'http://sublime.wbond.net/' + pf.replace(' ','%20')).read())
 ```
 
+### Install editorconfig
+```
+Ctrl + Shift + P
+type 'Install Package'
+type 'Editorconfig'
+```
+
+#### .editorconfig
+```
+; top-most EditorConfig file
+root = true
+
+[*]
+indent_style = space
+indent_size = 4
+end_of_line = lf
+charset = utf-8
+3insert_final_newline = true
+trim_trailing_whitespace = true
+```
+
+### Install Emmet
+```
+Ctrl + Shift + P
+type 'Install Package'
+type 'Emmet'
+```
+
+### Install NodeJS Web Server (ExpressJS)
+```
+$ npm install -g express
+```
+
+### Install Bower (front-end package manager)
+```
+$ npm install -g bower
 ```
 bower init
 bower install bootstrap --save
