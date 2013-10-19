@@ -1,5 +1,12 @@
 # Startup Camp3 - HTML5 Game Development
 
+## Issue List
+
+1. 使用Sublime Text + Emmet 自動產生標準index.html
+2. 套用Bootstrap 到index.html
+3. 
+
+
 ## List for development environment
 
 - [Sublime text](http://www.sublimetext.com/3)
@@ -51,7 +58,12 @@ Ctrl + Shift + P
 type 'Install Package'
 type 'Emmet'
 ```
-
+### Emmet Note (輸入後按tab)
+```
+html:5
+.class
+#id
+```
 ### Install NodeJS Web Server (ExpressJS)
 ```
 $ npm install -g express
