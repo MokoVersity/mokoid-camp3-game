@@ -40,6 +40,16 @@
 
 ## Note
 
+### sublime text 統一 tab_size
+
+```
+{
+	"tab_size": 4,
+	"translate_tabs_to_spaces": true,
+	"trim_trailing_white_space_on_save": true
+}
+```
+
 ### Set Windows to show invalid files and file extension name
 
 ### Install Package Control on Sublime Text 3 (Ctrl + `)
