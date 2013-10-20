@@ -96,6 +96,14 @@ html:5
 
 ```
 $ npm install -g express
+$ npm install
+$ npm install websocket --save
+```
+
+### Run Web Server
+
+```
+$ node app.js
 ```
 
 ### Install Bower (front-end package manager)
