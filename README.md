@@ -19,7 +19,7 @@
 10. 處理輸入事件 (input event)
 11. 設計按到球的演算法
 12. 按到球計算分數
-13. JSLint
+13. improve code quality in strict mode(verify by JSLint)
 
 
 ## List for development environment
