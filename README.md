@@ -74,7 +74,7 @@ indent_style = space
 indent_size = 4
 end_of_line = lf
 charset = utf-8
-3insert_final_newline = true
+insert_final_newline = true
 trim_trailing_whitespace = true
 ```
 
