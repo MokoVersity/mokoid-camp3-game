@@ -11,6 +11,8 @@
 7. Use JavaScript Module Pattern
 8. 產生 10 個 Balls
 9. 加入背景圖
+10. 處理輸入事件 (input event)
+11. 設計按到球的演算法
 
 
 ## List for development environment
