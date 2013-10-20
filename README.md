@@ -1,5 +1,10 @@
 # Startup Camp3 - HTML5 Game Development
 
+## Demo Repository
+
+- https://github.com/jollen/mokoversity-camp3
+- https://github.com/hankwang/mokoversity-camp3
+
 ## Issue List
 
 1. 使用Sublime Text + Emmet 自動產生標準index.html
