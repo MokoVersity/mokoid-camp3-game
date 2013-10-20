@@ -27,7 +27,7 @@
 	- [EditorConfig](http://editorconfig.org/)
 	- [Emmet](http://emmet.io)
 - [Github](https://github.com)
-- [JSLint](http://jsline.com)
+- [JSLint](http://jslint.com)
 - [NodeJS](http://nodejs.org/)
 	- [npm](https://npmjs.org/)
 	- [Express](http://expressjs.com)
