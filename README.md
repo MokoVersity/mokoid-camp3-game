@@ -18,6 +18,8 @@
 9. 加入背景圖
 10. 處理輸入事件 (input event)
 11. 設計按到球的演算法
+12. 按到球計算分數
+13. JSLint
 
 
 ## List for development environment
