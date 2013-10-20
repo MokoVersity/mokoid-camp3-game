@@ -95,15 +95,17 @@ html:5
 ### Install NodeJS Web Server (ExpressJS)
 
 ```
-$ npm install -g express
-$ npm install
-$ npm install websocket --save
+C:\Users\user\Documents\Github\mokoversity-camp3> npm install -g express
+C:\Users\user\Documents\Github\mokoversity-camp3> express
+C:\Users\user\Documents\Github\mokoversity-camp3> npm install
+C:\Users\user\Documents\Github\mokoversity-camp3> npm install websocket --save
 ```
 
 ### Run Web Server
 
 ```
 $ node app.js
+http://127.0.0.1:3000/index.html
 ```
 
 ### Install Bower (front-end package manager)
